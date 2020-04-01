@@ -13,7 +13,6 @@ class Pokemon
     SQL
 
     db.execute(sql, name, type)
-    @id = db.execute("SELECT last_insert_rowid() FROM pokemon")[0][0]
   end
 
   def self.new_from_db(row)
